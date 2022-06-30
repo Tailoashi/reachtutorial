@@ -27,7 +27,7 @@ const commonInteract = (role) => ({
 if (role === 'seller') {
     const sellerInteract = {
         ...commonInteract(role),
-        price: toAU(5),
+        price: toAU(20),
         wisdom: await ask.ask('Enter a wise phrase, or press Enter for default:', (s) => {
             let w = !s ? 'Build healthy communities.' : s;
             if (!s) { console.log(w); }
